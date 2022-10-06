@@ -1,20 +1,52 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Mr_Cheeezz &bull; Contact</title>
-  </head>
-  </head>
-  <body>
-    <p>welcome to my really cool contact page</p>
-    <div>
-      <div>
-        <ul>
-          <li><a href="https://github.com/mr-cheeezz"><strong>Github</strong></a></li>
-          <li><strong>Discord: </strong>Mr_Cheeezz#0001</li>
-          <li><strong>Email: </strong>mrcheeezz@mrcheeezz.com</li>
-          <li><a href="https://twitch.tv/mr_cheeezz"><strong>Twitch</strong></a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
+<body>
+	<head>
+		<title>Mr_Cheeezz &bull; Contact</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <script src="https://kit.fontawesome.com/127a0325ef.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/css/contact/main.css"/>
+		<noscript><link rel="stylesheet" href="/css/contact/css/noscript.css"/></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+
+<!-- Credits to initial website design by: https://html5up.net/ -->
+
+			<div class="fullscreen-bg">
+				<video loop muted autoplay poster="/videoframe.jpg" class="fullscreen-bg__video">
+					<!-- <source src="/videoplayback.webm" type="video/webm">
+					<source src="/videoplayback.mp4" type="video/mp4">
+					<source src="/videoplayback.ogv" type="video/ogg"> -->
+				</video>
+			</div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Mr_Cheeezz</h1>
+						<p>Student &nbsp;&bull;&nbsp; Programmer &nbsp;&bull;&nbsp; Editor</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/mr_cheeezz" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/jahaanjain" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://roaringiron.com/" class="icon fa-"><span class="label">ThePositiveBot</span></a></li>
+								<li><a href="https://twitch.tv/RoaringIron" class="icon fa-solid fa-twitch"><span class="label">Twitch</span></a></li>
+								<li><a href="contact/email.html" class="fa-solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
