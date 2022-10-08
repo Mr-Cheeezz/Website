@@ -947,3 +947,11 @@ iframe {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+	#home {
+		padding: 10px;
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}

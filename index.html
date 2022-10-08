@@ -1,37 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<head>
-    <title>Mr_Cheeezz</title>
-    <link rel="shortcust icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/home/home.css"> <!-- Peepo & Glitch-->
-    <link rel="stylesheet" href="css/home/nav.css"> <!-- Nav Bar -->
-    <link rel="stylesheet" href="css/home/corners.css">
-</head>
-
-<!-- Nav Bar -->
 <body>
-    <nav>
-        <ul id = "navcorners">
-            <li><a href="home.html"><strong>Home</strong></a></li>
-            <li><a href="contact.html"><strong>Contact</strong></a></li>
-            <li><a href="memes.html"><strong>Memes</strong></a></li>
-            <li><a href="https://pajbot.mrcheeezz.com"><strong>Pajbot</strong></a></li>
-            <li><a href="about.html"><strong>About</strong></a></li>
-        </ul>
-    </nav>
-</body>
-
-<!-- Main -->
-<body>
-    <div>
-        <img src="img/static/peepohappy.png" width="360px" height="340px">
-        <h1 class="glitch">
-            <span aria-hidden="true">Mr_Cheeezz</span> 
-            Mr_Cheeezz
-            <span aria-hidden="true">Mr_Cheeezz</span>
-        </h1>
-    </div>
-</body>
-
+	<head>
+		<title>Mr_Cheeezz</title>
+		<link rel="shortcust icon" href="img/favicon.ico"/>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    	<script src="https://kit.fontawesome.com/127a0325ef.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/contact/main.css"/>
+		<noscript><link rel="stylesheet" href="/css/contact/noscript.css"/></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div class="fullscreen-bg">
+					<!-- Going To add video SOON -->
+					<source src="/img/vid/videoplayback.webm" type="video/webm">
+					<source src="/img/vid/videoplayback.mp4" type="video/mp4">
+					<source src="/img/vid/videoplayback.ogv" type="video/ogg">
+				</video>
+			</div>
+			<!-- <div>
+				<header id="home">
+					<nav>
+						<a href="home.html" class="icon fa-home" style="font-size:30px;"><span class="label">Home</span></a>
+					</nav>
+				</header>
+			</div> -->
+				<div id="main">
+					<!-- Header -->
+					<header id="header">
+						<h1>Mr_Cheeezz</h1>
+						<p><strong>Student &nbsp;&bull;&nbsp; Programmer &nbsp;&bull;&nbsp; Editor</strong></p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/Mr_Cheeezz" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/Mr-Cheeezz" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://discord.com/users/548941033841360898" class="icon fa-discord"><span class="label"></span></a></li>
+								<li><a href="https://twitch.tv/Mr_Cheeezz" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
+								<li><a href="contact/email.html" class="icon fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCP7f2v6wNElEdIh3USOQScg" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+							</ul>
+						</nav>
+					</header>
+				</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
 </html>
