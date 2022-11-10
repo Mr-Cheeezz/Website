@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mr_Cheeezz</title>
+    <link>/</link>
+    <description>Recent content on Mr_Cheeezz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Sat, 09 Apr 2022 20:24:37 +1000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Streaming Tips</title>
+      <link>/streaming/</link>
+      <pubDate>Sat, 09 Apr 2022 20:24:37 +1000</pubDate>
+      
+      <guid>/streaming/</guid>
+      <description>function calculate() { let width = document.getElementById(&#34;width&#34;).value; let height = document.getElementById(&#34;height&#34;).value; let fps = document.getElementById(&#34;fps&#34;).value; let bpp = document.getElementById(&#34;bpp&#34;).value; if (width 4) { alert(&#34;The width should be more than 1280 and 4 numbers or less!&#34;); return } if (height 4) { alert(&#34;The height should be 720 or more and 4 numbers or less!&#34;); return } if (fps 144) { alert(&#34;The FPS should be 30 or more and 144 or less!</description>
+    </item>
+    
+  </channel>
+</rss>

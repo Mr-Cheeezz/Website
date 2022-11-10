@@ -1,180 +1,87 @@
-<!DOCTYPE HTML>
-<html>
-<body>
-	<head>
-		<title>Mr_Cheeezz</title>
-		<link rel="shortcust icon" href="img/favicon.ico"/>
-		<meta charset="utf-8">
-		<meta property="og:title" content="Mr_Cheeezz" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="/img/static/Mr_Cheeezz_Logo.png" />
-		<meta property="og:description" content="Just a website to contact me" />
-		<meta name="theme-color" content="#FFFFFF">
-    	<script src="https://kit.fontawesome.com/127a0325ef.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/contact/main.css"/>
-		<noscript><link rel="stylesheet" href="/css/contact/noscript.css"/></noscript>
-		<style>
-			/* galaxy animation */
-			.galaxy-header {
-				overflow: hidden;
-				position: absolute;
-				width: 100%;
-				height: 100vh;
-				-webkit-perspective: 340px;
-				perspective: 340px;
-				opacity: .7;
-			}
-		 
-			.galaxy {
-				overflow: hidden;
-				position: absolute;
-				top: 0;
-				z-index: 0;
-				width: 100%;
-				height: 100%;
-				-webkit-perspective: 340px;
-				perspective: 340px;
-				opacity: .7;
-			}
-		 
-			.stars {
-				position: absolute;
-				top: 50%;
-				border-radius: 50%;
-				left: 50%;
-				width: 3px;
-				height: 3px;
-				-webkit-box-shadow: -740px 444px #f2f2f2, 157px -59px #cccccc, 36px -3px #cccccc, -857px -439px #cccccc, -1408px 402px #d9d9d9, -235px -149px #d9d9d9, -1074px -305px #cfcfcf, 820px -287px #c4c4c4, -536px 243px #d6d6d6, 954px 377px #fafafa, 136px -179px #ededed, -294px -159px #ededed, 374px 403px #dbdbdb, -803px 4px #dbdbdb, -671px -262px #f7f7f7, -589px 136px #c7c7c7, -1248px -352px #e6e6e6, 459px -209px #f7f7f7, -1012px 318px #cfcfcf, -290px 117px #fafafa, -926px 46px #dbdbdb, 1350px 278px #d6d6d6, 969px -321px #e6e6e6, 380px -371px #e6e6e6, 912px 130px #ededed, -433px -403px #d9d9d9, -469px -46px #c2c2c2, -854px 37px #c9c9c9, 722px 112px #ededed, 1094px -49px #e6e6e6, 1436px -75px #c9c9c9, 897px 476px #cccccc, -262px 413px #cccccc, 806px 210px #c4c4c4, 1215px -71px #cccccc, -425px 156px #d4d4d4, -1338px 444px #e3e3e3, 1214px 174px #c4c4c4, -1133px 226px #d1d1d1, 1221px 352px #e8e8e8, 1385px 69px #e0e0e0, -85px 281px #c7c7c7, -451px 46px #fcfcfc, -1064px -134px #dedede, 1331px -15px #d6d6d6, -1001px 275px #d4d4d4, 522px -6px #cfcfcf, 573px -153px #ebebeb, 1320px -339px #e0e0e0, -591px 180px #fafafa, 779px -178px #c2c2c2, -606px 183px #c7c7c7, -1423px -406px #d4d4d4, 324px -17px #c4c4c4, -1403px -362px #dedede, 1294px 204px #dbdbdb, 648px 77px #c7c7c7, -39px -104px #ebebeb, 157px -88px #f7f7f7, -983px -330px #fcfcfc, -999px 78px #e8e8e8, -1268px -400px #f2f2f2, -438px -77px #d6d6d6, 573px 279px whitesmoke, -117px 252px #f0f0f0, -359px 292px #d6d6d6, 1306px 428px #e6e6e6, 1364px -141px #f2f2f2, -433px -394px #dbdbdb, 1424px -402px #e6e6e6, -403px 418px #ededed, -196px 147px #cccccc, 454px 323px #c9c9c9, -1416px 50px #dbdbdb, 1189px 210px whitesmoke, -615px -323px #e6e6e6, -203px 277px #f2f2f2, 1245px 45px #e6e6e6, 531px -225px #dedede, 737px 151px #dedede, -696px 323px #d6d6d6, 1358px 151px #d6d6d6, 29px 396px whitesmoke, -60px -355px whitesmoke, -445px -355px #f2f2f2, 12px -98px #fafafa, -757px -165px #cfcfcf, 927px 445px #f7f7f7, 278px 98px #ebebeb, -1324px -316px #d4d4d4, -582px -13px #d9d9d9, -1386px 283px #c9c9c9, 83px 109px whitesmoke, 511px -149px #e0e0e0, -581px -109px #d1d1d1, 298px -124px #c2c2c2, 858px -263px #e0e0e0, -1412px 210px #dedede, 327px 472px #dedede, 30px -220px #dbdbdb, 206px 266px #cfcfcf, -835px -428px #c9c9c9, 695px -440px #d1d1d1, -1293px 120px #d1d1d1, -537px 432px #e0e0e0, 374px 171px #e3e3e3, 1221px -358px #d4d4d4, 1028px 460px #ebebeb, 413px 201px #fcfcfc, 284px -428px #cfcfcf, 672px -338px white, 479px -358px #e3e3e3, -1178px -434px #fcfcfc, -1029px 423px #c2c2c2, 255px 116px #fcfcfc, -1065px 323px #f7f7f7, 510px -84px #dbdbdb, -1469px 53px #ededed, -1290px -375px #fafafa, -269px -173px #f0f0f0, -874px 200px #d6d6d6, -1053px 182px #e3e3e3, -137px 280px #dbdbdb, 1408px -429px #dedede, 687px -48px #c7c7c7, -1204px -25px #ededed, -676px -264px #d1d1d1, -1483px -267px #c7c7c7, 501px -252px #e6e6e6, -991px 335px #c4c4c4, -1089px -63px #d1d1d1, 416px -144px #ededed, -895px 320px #cccccc, -1092px -462px #d6d6d6, 935px -477px #d1d1d1, -1192px -438px #c7c7c7, 421px -101px whitesmoke, -1284px -20px #fafafa, 231px -454px #ebebeb, -83px 7px #ededed, 844px -153px #f2f2f2, 95px -372px whitesmoke, 1350px 96px white, 689px 255px #e8e8e8, 448px -59px white, -701px -85px #c7c7c7, -1383px 44px #c7c7c7, 364px -421px #f0f0f0, 442px -284px #e8e8e8, -942px -56px #e8e8e8, -198px 169px #f2f2f2, -912px -120px #e3e3e3, -1479px -67px #d9d9d9, -485px 128px #d4d4d4, -858px 78px #d4d4d4, -7px 175px #f7f7f7, -634px -178px #e0e0e0, 52px -256px #c4c4c4, 855px -72px #f0f0f0, 166px 303px #f7f7f7, 143px -469px #d6d6d6, 178px -283px #ededed, -985px -422px #c7c7c7, 794px -375px #e0e0e0, 751px 276px white, 1443px -199px #cccccc, 454px -417px #f0f0f0, -685px -427px #d1d1d1, 562px -35px #e6e6e6, 24px 124px #cfcfcf, -1394px 445px #c9c9c9, 996px -108px #c2c2c2, -400px 288px #c2c2c2, -1247px -383px #fcfcfc, -275px -143px #e3e3e3, -226px -222px #ebebeb, 665px 212px #c4c4c4, 502px 245px #c7c7c7, -1187px -443px white, -1246px 97px #d4d4d4, -593px -318px #d4d4d4, 1px 81px #ebebeb, 930px 264px #f7f7f7, 664px 141px #f2f2f2, -1301px 135px #cccccc, -573px 340px #d4d4d4, -946px 444px #e6e6e6, -103px -194px #fcfcfc, 796px 171px #d6d6d6, 431px -421px #f7f7f7, 1106px -11px #c2c2c2, -382px -69px #d4d4d4, -55px -461px #e8e8e8, 1248px -360px #d1d1d1, -145px -93px #f7f7f7, 35px 365px #c7c7c7, -219px 209px #e0e0e0, 1407px -429px #d9d9d9, 439px -251px #f7f7f7, 967px 326px #cfcfcf, -883px 257px #c2c2c2, -180px 205px #dbdbdb, -65px 102px #dbdbdb, 150px 229px #c4c4c4, 33px -348px #fafafa, -1339px -413px white, -1352px 262px #c9c9c9, -557px -86px whitesmoke, -232px 279px #f7f7f7, -465px 468px #f2f2f2, -105px 219px #f0f0f0, -1147px -51px #f2f2f2, -1489px -158px #d1d1d1, -878px -384px #dbdbdb, 1104px 234px #d9d9d9, 518px -17px #e0e0e0, -1082px -210px #d6d6d6, -177px 249px #c7c7c7, 456px -108px #dbdbdb, -798px -112px #d9d9d9, 337px 159px #c4c4c4, -1005px 402px #dedede, -1401px 194px #fafafa, 871px 305px whitesmoke, 756px -26px #f0f0f0, 1086px 379px #c4c4c4, 868px 336px #d1d1d1, -533px 59px #e3e3e3, -148px 186px #d6d6d6, -345px 257px #f7f7f7, 441px -116px #c4c4c4, -1162px 340px #d9d9d9, -1069px 431px #f7f7f7, -528px 354px #d9d9d9, 836px 35px whitesmoke, -974px 10px #fcfcfc, -304px -259px #dedede, 254px 47px whitesmoke, 328px 31px #c7c7c7, -1450px 316px #f0f0f0, 386px 459px #cccccc, -1326px 79px #d1d1d1, 673px 114px #cccccc, -9px -99px #c2c2c2, 466px 99px #fcfcfc, 712px 178px #d4d4d4, -981px -386px #d9d9d9, 904px -361px #d6d6d6, 983px 213px #d1d1d1, -287px 220px #ebebeb, 589px -71px #c2c2c2, 1264px 372px #fcfcfc, 659px -441px #ededed, 1377px 112px #f2f2f2, 1344px 477px #cccccc, -1476px -316px #d6d6d6, 354px 69px #ebebeb, -465px -266px #fafafa, -485px 456px #c4c4c4, -54px 146px #cccccc, -210px -330px #d6d6d6, 505px 456px #d4d4d4, 1394px 253px #d4d4d4, -1062px 336px #c2c2c2, 966px 196px #fcfcfc, -1463px -114px #ededed, -1119px 112px #d4d4d4, -952px -23px #cfcfcf, 1025px 279px #e8e8e8, 1464px 162px #fafafa, 327px -122px whitesmoke, -925px -177px whitesmoke, 385px -63px #e0e0e0, 1358px 451px #f2f2f2, 1344px -123px #e6e6e6, -1477px 398px #c2c2c2, 425px -306px #f0f0f0, 90px 445px #fafafa, -1172px -198px white, 345px -24px #c9c9c9, -1285px -283px #ededed, -818px 53px #dedede, 1057px -213px #cccccc, 678px 124px #f0f0f0, 688px 396px #ebebeb, -719px -172px #c4c4c4, -1215px -174px #f0f0f0, -260px 293px white, -1488px -386px #f7f7f7, -1480px 459px white, 1380px 32px #f2f2f2, 253px 328px #d6d6d6, 286px 449px #cfcfcf, -594px 66px white, 97px -69px #cfcfcf, -991px 313px #c2c2c2, -880px -83px white, -86px -192px #c2c2c2, 377px -241px #c4c4c4, -1047px 95px #fcfcfc, -366px 40px #e8e8e8, -414px 439px #f7f7f7, 1056px -404px #c2c2c2, 444px -244px #e8e8e8, -1407px 270px #c7c7c7, -355px -16px #d1d1d1, 1229px -114px white, 694px -416px #d6d6d6, -1309px -174px #ededed, 945px -457px #dbdbdb, -1189px -463px #e6e6e6, -1449px -136px #dedede, 866px 26px #d9d9d9, -80px 219px #f7f7f7, -781px -31px #e6e6e6, 756px 299px #d9d9d9, 1025px 320px #e6e6e6, 291px -281px #ededed, -853px 247px #e0e0e0, 198px 282px #d1d1d1, -505px 445px #ebebeb, 314px 250px #e8e8e8, -566px -338px #f7f7f7, -195px -296px #dedede, 737px -81px #ebebeb, 1430px 277px #f0f0f0, -1117px -59px #d1d1d1, 1422px 233px #e6e6e6, 1236px 301px #ebebeb, 177px 264px #f7f7f7, -957px 142px #cccccc, 1324px 341px #c4c4c4, -999px 463px #e0e0e0, 680px -319px #c2c2c2, 1194px -287px #f7f7f7, -1227px 348px #fafafa, 1351px -388px #f7f7f7, 242px 135px #c2c2c2, -778px 292px #ededed, 40px 22px #c4c4c4, 1395px 192px #fafafa, -300px -309px #c4c4c4, 1167px 152px #dedede, 1438px -277px #d4d4d4, 1103px -44px white, -1179px -301px #c9c9c9, 181px 364px #f0f0f0, 477px 332px #dedede, -1016px 161px #ededed, 1283px 468px #f2f2f2, -880px 17px #d6d6d6;
-				box-shadow: -740px 444px #f2f2f2, 157px -59px #cccccc, 36px -3px #cccccc, -857px -439px #cccccc, -1408px 402px #d9d9d9, -235px -149px #d9d9d9, -1074px -305px #cfcfcf, 820px -287px #c4c4c4, -536px 243px #d6d6d6, 954px 377px #fafafa, 136px -179px #ededed, -294px -159px #ededed, 374px 403px #dbdbdb, -803px 4px #dbdbdb, -671px -262px #f7f7f7, -589px 136px #c7c7c7, -1248px -352px #e6e6e6, 459px -209px #f7f7f7, -1012px 318px #cfcfcf, -290px 117px #fafafa, -926px 46px #dbdbdb, 1350px 278px #d6d6d6, 969px -321px #e6e6e6, 380px -371px #e6e6e6, 912px 130px #ededed, -433px -403px #d9d9d9, -469px -46px #c2c2c2, -854px 37px #c9c9c9, 722px 112px #ededed, 1094px -49px #e6e6e6, 1436px -75px #c9c9c9, 897px 476px #cccccc, -262px 413px #cccccc, 806px 210px #c4c4c4, 1215px -71px #cccccc, -425px 156px #d4d4d4, -1338px 444px #e3e3e3, 1214px 174px #c4c4c4, -1133px 226px #d1d1d1, 1221px 352px #e8e8e8, 1385px 69px #e0e0e0, -85px 281px #c7c7c7, -451px 46px #fcfcfc, -1064px -134px #dedede, 1331px -15px #d6d6d6, -1001px 275px #d4d4d4, 522px -6px #cfcfcf, 573px -153px #ebebeb, 1320px -339px #e0e0e0, -591px 180px #fafafa, 779px -178px #c2c2c2, -606px 183px #c7c7c7, -1423px -406px #d4d4d4, 324px -17px #c4c4c4, -1403px -362px #dedede, 1294px 204px #dbdbdb, 648px 77px #c7c7c7, -39px -104px #ebebeb, 157px -88px #f7f7f7, -983px -330px #fcfcfc, -999px 78px #e8e8e8, -1268px -400px #f2f2f2, -438px -77px #d6d6d6, 573px 279px whitesmoke, -117px 252px #f0f0f0, -359px 292px #d6d6d6, 1306px 428px #e6e6e6, 1364px -141px #f2f2f2, -433px -394px #dbdbdb, 1424px -402px #e6e6e6, -403px 418px #ededed, -196px 147px #cccccc, 454px 323px #c9c9c9, -1416px 50px #dbdbdb, 1189px 210px whitesmoke, -615px -323px #e6e6e6, -203px 277px #f2f2f2, 1245px 45px #e6e6e6, 531px -225px #dedede, 737px 151px #dedede, -696px 323px #d6d6d6, 1358px 151px #d6d6d6, 29px 396px whitesmoke, -60px -355px whitesmoke, -445px -355px #f2f2f2, 12px -98px #fafafa, -757px -165px #cfcfcf, 927px 445px #f7f7f7, 278px 98px #ebebeb, -1324px -316px #d4d4d4, -582px -13px #d9d9d9, -1386px 283px #c9c9c9, 83px 109px whitesmoke, 511px -149px #e0e0e0, -581px -109px #d1d1d1, 298px -124px #c2c2c2, 858px -263px #e0e0e0, -1412px 210px #dedede, 327px 472px #dedede, 30px -220px #dbdbdb, 206px 266px #cfcfcf, -835px -428px #c9c9c9, 695px -440px #d1d1d1, -1293px 120px #d1d1d1, -537px 432px #e0e0e0, 374px 171px #e3e3e3, 1221px -358px #d4d4d4, 1028px 460px #ebebeb, 413px 201px #fcfcfc, 284px -428px #cfcfcf, 672px -338px white, 479px -358px #e3e3e3, -1178px -434px #fcfcfc, -1029px 423px #c2c2c2, 255px 116px #fcfcfc, -1065px 323px #f7f7f7, 510px -84px #dbdbdb, -1469px 53px #ededed, -1290px -375px #fafafa, -269px -173px #f0f0f0, -874px 200px #d6d6d6, -1053px 182px #e3e3e3, -137px 280px #dbdbdb, 1408px -429px #dedede, 687px -48px #c7c7c7, -1204px -25px #ededed, -676px -264px #d1d1d1, -1483px -267px #c7c7c7, 501px -252px #e6e6e6, -991px 335px #c4c4c4, -1089px -63px #d1d1d1, 416px -144px #ededed, -895px 320px #cccccc, -1092px -462px #d6d6d6, 935px -477px #d1d1d1, -1192px -438px #c7c7c7, 421px -101px whitesmoke, -1284px -20px #fafafa, 231px -454px #ebebeb, -83px 7px #ededed, 844px -153px #f2f2f2, 95px -372px whitesmoke, 1350px 96px white, 689px 255px #e8e8e8, 448px -59px white, -701px -85px #c7c7c7, -1383px 44px #c7c7c7, 364px -421px #f0f0f0, 442px -284px #e8e8e8, -942px -56px #e8e8e8, -198px 169px #f2f2f2, -912px -120px #e3e3e3, -1479px -67px #d9d9d9, -485px 128px #d4d4d4, -858px 78px #d4d4d4, -7px 175px #f7f7f7, -634px -178px #e0e0e0, 52px -256px #c4c4c4, 855px -72px #f0f0f0, 166px 303px #f7f7f7, 143px -469px #d6d6d6, 178px -283px #ededed, -985px -422px #c7c7c7, 794px -375px #e0e0e0, 751px 276px white, 1443px -199px #cccccc, 454px -417px #f0f0f0, -685px -427px #d1d1d1, 562px -35px #e6e6e6, 24px 124px #cfcfcf, -1394px 445px #c9c9c9, 996px -108px #c2c2c2, -400px 288px #c2c2c2, -1247px -383px #fcfcfc, -275px -143px #e3e3e3, -226px -222px #ebebeb, 665px 212px #c4c4c4, 502px 245px #c7c7c7, -1187px -443px white, -1246px 97px #d4d4d4, -593px -318px #d4d4d4, 1px 81px #ebebeb, 930px 264px #f7f7f7, 664px 141px #f2f2f2, -1301px 135px #cccccc, -573px 340px #d4d4d4, -946px 444px #e6e6e6, -103px -194px #fcfcfc, 796px 171px #d6d6d6, 431px -421px #f7f7f7, 1106px -11px #c2c2c2, -382px -69px #d4d4d4, -55px -461px #e8e8e8, 1248px -360px #d1d1d1, -145px -93px #f7f7f7, 35px 365px #c7c7c7, -219px 209px #e0e0e0, 1407px -429px #d9d9d9, 439px -251px #f7f7f7, 967px 326px #cfcfcf, -883px 257px #c2c2c2, -180px 205px #dbdbdb, -65px 102px #dbdbdb, 150px 229px #c4c4c4, 33px -348px #fafafa, -1339px -413px white, -1352px 262px #c9c9c9, -557px -86px whitesmoke, -232px 279px #f7f7f7, -465px 468px #f2f2f2, -105px 219px #f0f0f0, -1147px -51px #f2f2f2, -1489px -158px #d1d1d1, -878px -384px #dbdbdb, 1104px 234px #d9d9d9, 518px -17px #e0e0e0, -1082px -210px #d6d6d6, -177px 249px #c7c7c7, 456px -108px #dbdbdb, -798px -112px #d9d9d9, 337px 159px #c4c4c4, -1005px 402px #dedede, -1401px 194px #fafafa, 871px 305px whitesmoke, 756px -26px #f0f0f0, 1086px 379px #c4c4c4, 868px 336px #d1d1d1, -533px 59px #e3e3e3, -148px 186px #d6d6d6, -345px 257px #f7f7f7, 441px -116px #c4c4c4, -1162px 340px #d9d9d9, -1069px 431px #f7f7f7, -528px 354px #d9d9d9, 836px 35px whitesmoke, -974px 10px #fcfcfc, -304px -259px #dedede, 254px 47px whitesmoke, 328px 31px #c7c7c7, -1450px 316px #f0f0f0, 386px 459px #cccccc, -1326px 79px #d1d1d1, 673px 114px #cccccc, -9px -99px #c2c2c2, 466px 99px #fcfcfc, 712px 178px #d4d4d4, -981px -386px #d9d9d9, 904px -361px #d6d6d6, 983px 213px #d1d1d1, -287px 220px #ebebeb, 589px -71px #c2c2c2, 1264px 372px #fcfcfc, 659px -441px #ededed, 1377px 112px #f2f2f2, 1344px 477px #cccccc, -1476px -316px #d6d6d6, 354px 69px #ebebeb, -465px -266px #fafafa, -485px 456px #c4c4c4, -54px 146px #cccccc, -210px -330px #d6d6d6, 505px 456px #d4d4d4, 1394px 253px #d4d4d4, -1062px 336px #c2c2c2, 966px 196px #fcfcfc, -1463px -114px #ededed, -1119px 112px #d4d4d4, -952px -23px #cfcfcf, 1025px 279px #e8e8e8, 1464px 162px #fafafa, 327px -122px whitesmoke, -925px -177px whitesmoke, 385px -63px #e0e0e0, 1358px 451px #f2f2f2, 1344px -123px #e6e6e6, -1477px 398px #c2c2c2, 425px -306px #f0f0f0, 90px 445px #fafafa, -1172px -198px white, 345px -24px #c9c9c9, -1285px -283px #ededed, -818px 53px #dedede, 1057px -213px #cccccc, 678px 124px #f0f0f0, 688px 396px #ebebeb, -719px -172px #c4c4c4, -1215px -174px #f0f0f0, -260px 293px white, -1488px -386px #f7f7f7, -1480px 459px white, 1380px 32px #f2f2f2, 253px 328px #d6d6d6, 286px 449px #cfcfcf, -594px 66px white, 97px -69px #cfcfcf, -991px 313px #c2c2c2, -880px -83px white, -86px -192px #c2c2c2, 377px -241px #c4c4c4, -1047px 95px #fcfcfc, -366px 40px #e8e8e8, -414px 439px #f7f7f7, 1056px -404px #c2c2c2, 444px -244px #e8e8e8, -1407px 270px #c7c7c7, -355px -16px #d1d1d1, 1229px -114px white, 694px -416px #d6d6d6, -1309px -174px #ededed, 945px -457px #dbdbdb, -1189px -463px #e6e6e6, -1449px -136px #dedede, 866px 26px #d9d9d9, -80px 219px #f7f7f7, -781px -31px #e6e6e6, 756px 299px #d9d9d9, 1025px 320px #e6e6e6, 291px -281px #ededed, -853px 247px #e0e0e0, 198px 282px #d1d1d1, -505px 445px #ebebeb, 314px 250px #e8e8e8, -566px -338px #f7f7f7, -195px -296px #dedede, 737px -81px #ebebeb, 1430px 277px #f0f0f0, -1117px -59px #d1d1d1, 1422px 233px #e6e6e6, 1236px 301px #ebebeb, 177px 264px #f7f7f7, -957px 142px #cccccc, 1324px 341px #c4c4c4, -999px 463px #e0e0e0, 680px -319px #c2c2c2, 1194px -287px #f7f7f7, -1227px 348px #fafafa, 1351px -388px #f7f7f7, 242px 135px #c2c2c2, -778px 292px #ededed, 40px 22px #c4c4c4, 1395px 192px #fafafa, -300px -309px #c4c4c4, 1167px 152px #dedede, 1438px -277px #d4d4d4, 1103px -44px white, -1179px -301px #c9c9c9, 181px 364px #f0f0f0, 477px 332px #dedede, -1016px 161px #ededed, 1283px 468px #f2f2f2, -880px 17px #d6d6d6;
-				-webkit-animation: zooms 10s linear infinite;
-				animation: zooms 10s linear infinite;
-				-webkit-transform-style: preserve-3d;
-				transform-style: preserve-3d;
-			}
-		 
-			.stars:before,
-			.stars:after {
-				content: "";
-				position: absolute;
-				width: inherit;
-				height: inherit;
-				-webkit-box-shadow: inherit;
-				box-shadow: inherit;
-			}
-		 
-			.stars:before {
-				-webkit-transform: translateZ(-300px);
-				transform: translateZ(-300px);
-				-webkit-animation: hideme1 10s linear infinite;
-				animation: hideme1 10s linear infinite;
-			}
-		 
-			.stars:after {
-				-webkit-transform: translateZ(-600px);
-				transform: translateZ(-600px);
-				-webkit-animation: hideme2 10s linear infinite;
-				animation: hideme2 10s linear infinite;
-			}
-		 
-			@-webkit-keyframes zooms {
-				from {
-					-webkit-transform: translateZ(0px);
-					transform: translateZ(0px);
-				}
-				to {
-					-webkit-transform: translateZ(300px);
-					transform: translateZ(300px);
-				}
-			}
-		 
-			@keyframes zooms {
-				from {
-					-webkit-transform: translateZ(0px);
-					transform: translateZ(0px);
-				}
-				to {
-					-webkit-transform: translateZ(300px);
-					transform: translateZ(300px);
-				}
-			}
-		 
-			@-webkit-keyframes hideme1 {
-				from {
-					opacity: .5;
-				}
-				to {
-					opacity: 1;
-				}
-			}
-		 
-			@keyframes hideme1 {
-				from {
-					opacity: .5;
-				}
-				to {
-					opacity: 1;
-				}
-			}
-		 
-			@-webkit-keyframes hideme2 {
-				from {
-					opacity: 0;
-				}
-				to {
-					opacity: .5;
-				}
-			}
-		 
-			@keyframes hideme2 {
-				from {
-					opacity: 0;
-				}
-				to {
-					opacity: .5;
-				}
-			}
-		 
-			/* section, header {
-				position: relative;
-				overflow: hidden;
-			background: #000;
-				height: 100%;
-			} */
-			</style>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div class="fullscreen-bg">
-				<div class="galaxy">
-				<div class="stars"></div>
-				</div>
-				<div id="main">
-					<!-- Header -->
-					<header id="header">
-						<h1>Mr_Cheeezz</h1>
-						<p><strong>Student &nbsp;&bull;&nbsp; Programmer &nbsp;&bull;&nbsp; Editor</strong></p>
-						<nav>
-							<ul>
-								<li><a href="https://twitter.com/Mr_Cheeezz" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://github.com/Mr-Cheeezz" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://discord.com/users/548941033841360898" class="icon fa-discord"><span class="label">Discord</span></a></li>
-								<li><a href="https://twitch.tv/Mr_Cheeezz" class="icon fa-twitch"><span class="label">Twitch</span></a></li>
-								<li><a href="https://bot.mrcheeezz.com" class="icon fa-robot"><span class="label">Bot</span></a></li>
-								<li><a href="https://sounds.mrcheeezz.com/sounds" class="icon fa-volume-up"><span class="label">Sounds</span></a></li>
-								<li><a href="https://sites.mrcheeezz.com" class="icon fa-link"><span class="label">Sites</span></a></li>
-								<li><a href="https://mrcheeezz.com/email" class="icon fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://www.youtube.com/channel/UCP7f2v6wNElEdIh3USOQScg" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
-							</ul>
-						</nav>
-					</header>
-				</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="generator" content="Hugo 0.54.0" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Mr_Cheeezz ">
+
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/" />
+<title>
+        
+            Mr_Cheeezz 
+        
+    </title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/main.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="msapplication-TileColor" content="">
+<meta itemprop="name" content="Mr_Cheeezz">
+<meta itemprop="description" content="">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Mr_Cheeezz" />
+<meta name="twitter:description" content="" />
+<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Mr_Cheeezz" />
+</head>
+<body class="">
+<div class="container">
+<header class="header">
+<span class="header__inner">
+<a href="/" style="text-decoration: none;">
+<div class="logo">
+<span class="logo__mark">></span>
+<span class="logo__text">Mr_Cheeezz</span>
+<span class="logo__cursor" style="
+                   
+                   ">
+</span>
+</div>
+</a>
+<span class="header__right">
+<nav class="menu">
+<ul class="menu__inner"><li><a href="/">Home</a></li><li><a href="/email.html">Contact</a></li><li><a href="http://mrcheeezz.xyz" <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>>Twitch Bot</a></li>
+</ul>
+</nav>
+<span class="menu-trigger">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M0 0h24v24H0z" fill="none" />
+<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+</svg>
+</span>
+</span>
+</span>
+</header>
+<div class="content">
+<main aria-role="main">
+<div>
+<img src="img/static/Avatar.png" class="circle" alt="Avatar" style="max-width:112px"/>
+<h1>Mr_Cheeezz</h1>
+<div>
+&nbsp; <a href="http://github.com/Mr-Cheeezz" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a> &nbsp;&nbsp; <a href="http://www.reddit.com/user/mr_cheeezz546" target="_blank" rel="noopener" title="Reddit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z" /></svg></a> &nbsp;&nbsp; <a href="http://steamcommunity.com/id/mr_cheeezz" target="_blank" rel="noopener" title="Steam"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z" /></svg></a> &nbsp;&nbsp; <a href="http://twitch.tv/mr_cheeezz" target="_blank" rel="noopener" title="Twitch"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.089 0L.525 4.175v16.694h5.736V24h3.132l3.127-3.132h4.695l6.26-6.258V0H2.089zm2.086 2.085H21.39v11.479l-3.652 3.652H12l-3.127 3.127v-3.127H4.175V2.085zM9.915 12.522H12v-6.26H9.915v6.26zm5.735 0h2.086v-6.26H15.65v6.26z" /></svg></a> &nbsp;&nbsp; <a href="http://twitter.com/mr_cheeezz" target="_blank" rel="noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a> &nbsp;&nbsp; <a href="http://youtube.com/@Mr_Cheeezz" target="_blank" rel="noopener" title="Youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a> &nbsp;
+</div>
+</div>
+</main>
+</div>
+<footer class="footer">
+<div class="footer__inner">
+<div class="footer__content">
+<span>&copy; 2022</span>
+<span>Mr_Cheeezz</span>
+</div>
+</div>
+</footer>
+</div>
+
+<script type="text/javascript" src="/bundle.min.js" integrity="sha512-S9TM0quf5TOLtcfZKoExf6VMlIu1YF6YB8TptvetQYbHD3Y0syPnuFTEosSvfZ69H8Wm9Cs30nIac12LHXy/AQ=="></script>
+<script src="/rocket-loader.min.js" data-cf-settings="bd3d9bbac205025e7ab9da03-|49" defer=""></script></body>
 </html>
