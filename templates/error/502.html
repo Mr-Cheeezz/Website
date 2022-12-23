@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+{% block title %}500{% endblock %}
+{% block body %}
+        <main aria-role="main">
+          <style>
+            .btn-404 a {
+              text-decoration: none;
+              border: 2px solid #a9a9b3;
+            }
+
+            a {
+              transition: all 0.3s ease-in-out
+            }
+
+            .btn-404 a:hover {
+              outline: none;
+              border: 2px solid rgb(251, 217, 251);
+              box-shadow: 0 0 10px #a9a9b3;
+              color: #a9a9b3;
+              text-shadow: 0 0 10px #a9a9b3;
+              transform: scale(0.8);
+              transition: all 0.3s ease-in-out;
+              font-weight: 700
+            }
+          </style>
+          <div style="user-select: none">
+            <h1>502</h1>
+            <p style="font-size: 20px">Bad Gateway</p>
+            <p class="btn-404">
+              <a href="/" style="border-radius: 12px; padding: 5px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+              </a>
+              <a href="javascript:history.back(-1)" style="border-radius: 12px; padding: 5px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-web">
+                  <polyline points="21 8 21 21 3 21 3 8"></polyline>
+                  <rect x="1" y="3" width="22" height="5"></rect>
+                  <line x1="10" y1="12" x2="14" y2="12"></line>
+                </svg>
+                Go Back
+              </a>
+            </p>
+          </div>
+        </main>
+{% endblock %}

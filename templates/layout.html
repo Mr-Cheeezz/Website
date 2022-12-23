@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Ttitle -->
+    <title>Mr_Cheeezz &bull; {% block title %}[NO TITLE]{% endblock %}</title> 
+    <!-- CHARSET -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta -->
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Mr_Cheeezz ">
+    <meta name="description" content="Hello, welcome!" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="noodp" />
+    <meta name="theme-color" content="#FF00FF" />
+    <meta name="image" content="static">
+    <meta name="msapplication-TileColor" content="#FF00FF">
+    <!-- Property -->
+    <meta property="og:image" content="/static/images/glitch.gif">
+    <meta property="og:description" content="
+    {% block description %}
+    Hello, Welcome!
+    This is my website.
+    {% endblock %}">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mr_Cheeezz" />
+    <meta name="twitter:description" content="'
+    Hello, Welcome!
+    This is my website." />
+    <!-- Other -->
+    <meta itemprop="name" content="Mr_Cheeezz">
+    <meta itemprop="description" content="
+    Hello, Welcome!
+    This is my website.
+    ">
+    <link rel="canonical" href="/" />
+    <!-- CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    {% block css %}<link rel="stylesheet" href="/static/css/base.css">{% endblock %}
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+    <link rel="manifest" href="/static/scripts/site.webmanifest">
+    <link rel="mask-icon" href="/static/images/safari-pinned-tab.svg" color="#FF00FF">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZSTREGJM6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2ZSTREGJM6');
+    </script>
+    <!-- ALT -->
+    <link rel="alternate" type="application/rss+xml" href="/index.xml" title="Mr_Cheeezz" />
+  </head>
+  
+  <body class="">
+    <div class="container">
+      <header class="header">
+        <span class="header__inner">
+          <div class="logo" style="user-select: none">
+            <span class="logo__mark">></span>
+            <span class="logo__text">Mr_Cheeezz</span>
+            <span class="logo__cursor"></span>
+          </div>
+          <span class="header__right">
+            <nav class="menu">
+              <ul class="menu__inner">
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="https://mrcheeezz.xyz" target="_blank" rel="noopener">Twitch Bot</a></li>
+              </ul>
+            </nav>
+            <span class="menu-trigger">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+              </svg>
+            </span>
+          </span>
+        </span>
+      </header>
+      <div class="content">
+        {% block body %}{% endblock %}
+      </div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__content" style="user-select: none">
+            <span>&copy; 2022</span>
+            <span>Mr_Cheeezz</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="/static/scripts/bundle.min.js" integrity="sha512-S9TM0quf5TOLtcfZKoExf6VMlIu1YF6YB8TptvetQYbHD3Y0syPnuFTEosSvfZ69H8Wm9Cs30nIac12LHXy/AQ=="></script>
+    <script src="/static/scripts/rocket-loader.min.js" data-cf-settings="bd3d9bbac205025e7ab9da03-|49" defer=""></script>
+  </body>
+</html>
